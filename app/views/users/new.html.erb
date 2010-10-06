@@ -1,0 +1,65 @@
+ <div class="innerContent">
+		<div id="xxx">
+		 <div class="progressMenu">
+          <ul class="rtabs">
+            <li class="alogin"> <a href="#rtab1"> </a></li>
+          </ul>
+         </div>
+                
+        <div id="rtab1" class="tab_content">
+			<div class="note"><p>Fill out the form below to create your account. It will only take <span>20 seconds!</span></p>
+			</div>
+        	<div id="loginDWrap">
+            	<table align="center">
+                  <% form_for @user, :url => profile_path do |f| %>
+                  <%= f.error_messages %>
+                  <tr>
+                    <td class="formLabel">Your Name</td>
+                    <td><%= f.text_field :name, :class => 'bigTextArea' %></td>
+                  </tr>
+                  <tr>
+                    <td class="formLabel">Email</td>
+                    <td><%= f.text_field :email, :class => 'bigTextArea' %></td>
+                  </tr>
+                  <tr>
+                    <td class="formLabel">Username</td>
+                    <td><%= f.text_field :login, :class => 'bigTextArea' %></td>
+                  </tr>
+                  <tr>
+                    <td class="formLabel">Password</td>
+                    <td><%= f.password_field :password, :class => 'bigTextArea' %></td>
+                  </tr>
+                  <tr>
+                    <td class="formLabel">Confirm Password</td>
+                    <td><%= f.password_field :password_confirmation, :class => 'bigTextArea' %></td>
+                  </tr>
+                  <tr>
+                    <td>&nbsp;</td>
+                    <td align="center" style="padding-top:10px;"><input type="image" src="images/buttCreateAcct.jpg" /></td>
+                  </tr>
+                  <% end %>
+                </table>
+
+            </div>
+		</div>
+		
+        
+        <!-- end tab1 -->
+
+    </div><!-- end innerContent -->
+
+<script type="text/javascript">
+$(document).ready(function() {
+	$(".tab_content").hide(); 
+	$("ul.rtabs li:first").addClass("active").show(); 
+	$(".tab_content:first").show(); 
+	
+	$("ul.rtabs li").click(function() {
+		$("ul.tabs li").removeClass("active"); 
+		$(this).addClass("active"); 
+		$(".tab_content").hide(); 
+		var activeTab = $(this).find("a").attr("href"); 
+		$(activeTab).fadeIn(); 
+		return false;
+	});});
+</script>

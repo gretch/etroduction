@@ -1,0 +1,17 @@
+All Tasks
+	
+Milestone
+Key milestone Phase 1
+	Login Via FB Connect 	Gretch Gapol
+	Login Via OpenID 	Gretch Gapol
+
+	Add Retweet button on Contents
+	Friendly URLs for Contents
+	Add Content Categories
+	Add Most Commented 	
+	Add Most Read Article 	
+	admin has an option to reject or delete user post 
+	Users able to post their own content to the site 	
+	Add FB like button in every Articles
+	Include RSS feeds on the home page 
+	Add a commenting system to Articles

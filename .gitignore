@@ -1,0 +1,11 @@
+.svn/*
+log/*
+config/database.yml
+config/facebooker.yml
+*/.svn/*
+/*/.svn/*
+/*/*/.svn/*
+/*/*/*/.svn/*
+/*/*/*/*/.svn/*
+/*/*/*/*/*/.svn/*
+/*/*/*/*/*/*/.svn/*

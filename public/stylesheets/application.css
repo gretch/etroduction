@@ -1,0 +1,169 @@
+@charset "utf-8";
+/* CSS Document */
+
+body {margin:0; padding:0; height:100%; font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif; color:#555; font-size:12px; background-color:#ffffff;}
+html {margin:0; padding:0; height:100%;}
+
+.left {float:left;}
+.right {float:right;}
+.clr {clear:both; font-size:0; height:0px; line-height:0;}
+
+* { margin:0; padding:0;}
+
+a img, img {border:none;}
+a {text-decoration:none; outline:none; color:#4284ac;}
+a:hover {text-decoration:underline;}
+
+#page {position:relative; height:100%; width:100%; min-height:100%;}
+
+#header {height:90px; background:url("/images/headerBg.jpg") top repeat-x;}
+#logoCont {margin:auto; width:203px; height:30px; padding-top:18px;}
+
+#mainContent {margin:auto; width:960px; padding:20px 20px 57px 20px; margin-top:40px;}
+h1 {font-size:25px; color:#008abd;}
+h1 span {font-weight:bold; color:#2d688c;}
+h2 {font-size:20px; font-weight:bold; color:#4284ac; padding:10px 2px 2px 2px;}
+#h1Head {background:url("/images/h1Bg.jpg") repeat-x bottom; padding-bottom:10px;}
+.mainContLeft {width:640px;}
+.mainContLeft p {line-height:18px; padding-top:10px;}
+.mainContRight {width:300px; margin-left:20px;}
+h3 {font-size:16px; color:#008abd;}
+
+#myriadHead {padding-bottom:12px;}
+#loginForms {height:116px; width:240px; background:url("/images/loginBg.jpg") repeat-x top; padding:10px 8px 10px;}
+.formTextArea {background:url("/images/fTa.jpg") no-repeat top left; outline:none; border:none; width:165px; height:24px; padding:3px 0 2px 5px; margin:0 0 0 6px;}
+
+#footer {position:absolute; height:57px; width:100%; background:url("/images/footerBg.jpg") bottom repeat-x; margin-top:30px;}
+#footer p {padding-top:16px; text-align:center;}
+
+.innerContent {width:910px; margin:auto; padding-top:30px;}
+.progressMenu {height:33px; width:513px; margin:auto;}
+.progressMenu li {list-style-type:none;	float:left;}
+.progressMenu li a {display:block; background:url("/images/progressSprite.jpg") no-repeat top left; height:32px;}
+.progressMenu li.alogin a {background-position:0px 0px;	width:119px;}
+.progressMenu li.adetails a {background-position:-119px 0px; width:195px;}
+.progressMenu li.ainvite a {background-position:-314px 0px; width:136px;}
+.progressMenu li.adone a {background-position:-449px 0px; width:63px;}
+.progressMenu li.alogin a:hover { background-position:0px -32px; }
+.progressMenu li.adetails a:hover { background-position:-119px -32px; }
+.progressMenu li.ainvite a:hover { background-position:-314px -32px; }
+.progressMenu li.adone a:hover { background-position:-449px -32px; }
+.progressMenu li.alogin a:active { background-position:0px -32px; }
+.progressMenu li.adetails a:active { background-position:-119px -32px; }
+.progressMenu li.ainvite a:active { background-position:-314px -32px; }
+.progressMenu li.adone a:active { background-position:-449px -32px; }
+
+.makeTab {height:78px; width:534px; margin:auto;}
+.makeTab li {list-style-type:none; float:left;}
+.makeTab li a {display:block; background:url("/images/makeSprite.jpg") no-repeat top left; height:78px;}
+.makeTab li.m1 a {background-position:0px 0px;	width:133px;}
+.makeTab li.m2 a {background-position:-131px 0px; width:133px;}
+.makeTab li.m3 a {background-position:-262px 0px; width:133px;}
+.makeTab li.mdone a {background-position:-393px 0px; width:133px;}
+.makeTab li.m1 a:hover { background-position:0px -78px; }
+.makeTab li.m2 a:hover { background-position:-131px -78px; }
+.makeTab li.m3 a:hover { background-position:-262px -78px; }
+.makeTab li.mdone a:hover { background-position:-393px -78px; }
+.makeTab li.m1 a:active { background-position:0px -78px; }
+.makeTab li.m2 a:active { background-position:-131px -78px; }
+.makeTab li.m3 a:active { background-position:-262px -78px; }
+.makeTab li.mdone a:active { background-position:-393px -78px; }
+
+.makeTab li.m1.active  a{background-position:0px -78px !important; border-bottom:1px solid #f2f2f2;}
+.makeTab li.m2.active  a{background-position:-131px -78px !important; border-bottom:1px solid #f2f2f2;}
+.makeTab li.m3.active  a{background-position:-262px -78px !important; border-bottom:1px solid #f2f2f2;}
+.makeTab li.mdone.active  a{background-position:-393px -78px !important; border-bottom:1px solid #f2f2f2;}
+
+.note {padding:20px; text-align:center;}
+.note p span {color:#4284ac;}
+
+#loginDetailsForm {height:265px; background:url("/images/logFormsBg.jpg") repeat-x top left;}
+#loginDWrap {margin:auto; padding:20px 250px;}
+.bigTextArea {width:295px; height:30px; background:url("/images/bigTextArea.jpg") no-repeat left; outline:none; border:none; margin:0 6px; padding:10px 5px 0 5px; }
+.formLabel {text-align:right; font-size:14px; color:#137ca9; display:block; padding-top:10px;}
+.formLabel2 {text-align:left; font-size:14px; color:#137ca9; padding-top:10px;}
+
+#emailService {height:125px; background:#f2f2f2; border-top: 1px solid #dcdbdb; border-bottom: 1px solid #dcdbdb;}
+.chooseContacts {margin-top:26px; width:450px;}
+.contactsFrame {width:430px; height:300px; border: 1px solid #dcdbdb; margin-top:10px;}
+
+.iContWrap {width:910px; margin:auto;}
+.topMenu {height:30px; border-bottom: 1px solid #ccc; text-align:right;}
+.topMenu span {color:#4284ac;}
+.topMenu a {color:#555;}
+.topMenu a:hover {color:#4284ac;}
+
+.menuLeft {width:175px; padding:18px 15px 0 0;}
+.menuLeft ul li {list-style-type:none; line-height:26px;}
+.menuLeft ul li a{display:block; padding:0 10px; color:#626262;}
+.menuLeft ul li a:hover{background-color:#4385ac; color:#fff; text-decoration:none;  padding:0 10px;}
+
+.midCont {width:530px; padding-top:18px;}
+#searchJob {height:70px; background-color:#f2f2f2; border: 1px solid #d2d2d2; margin-bottom:15px; padding:10px 35px;}
+.iLabel {font-size:14px; color:#137ca9; padding-bottom:4px;}
+#jobTextArea {width:400px; border: 1px solid #ccc;  font-size:12px; font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif; color:#555; padding:7px 3px;}
+
+.iTextField {width:434px; border: 1px solid #ccc; padding:7px 3px; font-size:12px; font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif; color:#555; margin-bottom:10px;}
+.siTextField {width:190px; border: 1px solid #ccc; padding:5px 3px; font-size:11px; font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif; color:#555; margin-bottom:10px;}
+.miTextField {width:300px; border: 1px solid #ccc; padding:5px 3px; font-size:11px; font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif; color:#555; margin-bottom:10px; margin-left:20px;}
+.formWrapper {background-color:#f2f2f2; border: 1px solid #d2d2d2; margin:auto; padding:10px 35px;}
+#home2Col {margin-top:20px;}
+.col1 {width:254px;}
+.frameWrap {display:block; border:1px solid #d2d2d2; margin-top:5px;}
+.hint {width:434px; margin:-8px; font-size:10px; font-style:italic; color:#b0b0b0; display:block; padding:0 0 20px 8px; text-align:right;}
+.buttonNi {padding-bottom:14px;}
+.viewMore {padding-top:3px; text-align:right;}
+.oddList {border-bottom:1px solid #dfdfdf; padding:10px 8px; background-color:#f5f5f5;}
+.evenList {border-bottom:1px solid #dfdfdf; padding:10px 8px; background-color:#fff;}
+.listHead {color:#286c92; font-size:11px;}
+.listDet {color:#7c7c7c; font-size:10px;}
+
+.bannerRight {width:160px; padding:18px 5px; margin:auto;}
+.banner {margin:auto; width:125px; height:125px; margin-bottom:20px;}
+
+#etroTab {margin-top:22px;}
+
+#imageWrap {padding:4px; border:1px solid #ccc;}
+.profileDetails {width:300px;}
+#name {font-size:20px; text-align:left; color:#4284ac;}
+#address {font-size:13px; color:#626262; padding-bottom:22px;}
+.moreDWrap {border-bottom:1px solid #ccc;}
+.moreD {font-size:14px; color:#4284ac; padding-bottom:3px;}
+.moreDList {font-size:11px; color:#626262; padding-bottom:25px;}
+.edit a{font-size:10px; color:#c4c4c4; display:block;}
+.edit a:hover{font-size:10px; color:#4284ac; text-decoration:none; display:block;}
+.fbLink {width:140px; background:url("/images/fb.jpg") no-repeat top left; padding-left:30px; font-size:10px; color:#4284ac; line-height:26px; display:block;}
+.inLink {width:140px; background:url("/images/in.jpg") no-repeat top left; padding-left:30px; font-size:10px; color:#4284ac; line-height:26px; display:block;}
+
+#connList {border:1px solid #ccc;}
+#fLWrap {border:1px solid #ccc; background:#fff; padding:10px;}
+.fList {width:144px; margin:10px 0;}
+.fImage {margin-right:10px;}
+
+.usrImage {width:50px; margin-right:10px;}
+.usrInfo{width:140px; margin-right:10px;}
+.inusrInfo{width:110px; margin-right:10px;}
+.usrTag {width:218px;}
+.listConn{padding-top:5px;}
+.tagHead {color:#6d6d6d; font-size:11px;}
+.tagDet {color:#9a9a9a; font-size:10px;}
+
+.arrowLeft a{display:block; width:31px; height:19px; text-indent: -9000%; background-position:0px 0px; background:url("/images/arrowleft.jpg") no-repeat; margin-right:3px;}
+.arrowRight a{display:block; width:31px; height:19px; text-indent: -9000%; background-position:0px 0px; background:url("/images/arrowright.jpg") no-repeat; }
+.arrowLeft a:hover{background-position:0px -19px;}
+.arrowRight a:hover{background-position:0px -19px;}
+
+.inboxMenu {font-size: 10px; line-height:20px;}
+.inboxMenu ul li {list-style-type:none; float:left;}
+.inboxMenu ul li a{padding:3px 4px; color:#8b8b8b;}
+.inboxMenu ul li a:hover{padding:3px 4px; color:#4284ac;}
+#inboxMenuTop {margin:15px 0;}
+
+.tab_container {background-color:#f2f2f2; border: 1px solid #d2d2d2; margin:auto; padding:20px 35px;}
+#eDone {text-align:center;}
+#eDone span{color:#4284ac;}
+#bWrap {margin:10px; 0;}
+
+#toFriend {padding-bottom:10px; border-bottom:dotted 1px #ccc;}
+
+.space {margin:20px 0; border-bottom:1px dotted #ccc;}

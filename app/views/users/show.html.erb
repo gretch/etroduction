@@ -1,0 +1,49 @@
+	 <div class="midCont left">
+      <%= render :partial => "shared/search_box" %>
+	  
+      <div id="profileWrap">
+       <div class="profilePic left">
+        <div id="imageWrap">
+         <div><%= image_tag('profile.jpg') %></div>
+        </div>
+        <div style="margin-top:10px;">
+         <div class="fbLink left"><%= @user.facebook_link.blank? ? 'None' : (link_to 'My Facebook link', @user.facebook_link) %></div>
+         <div class="edit right" style="padding-right:10px; line-height:26px;"><%= link_to 'edit', edit_profile_path if owner(@user) %></div>
+         <div class="clr"></div>
+		</div>
+        <div>
+         <div class="inLink left"><%= @user.linkedin_link.blank? ? 'None' : (link_to 'My Linkedin link', @user.linkedin_link) %></div>
+         <div class="edit right" style="padding-right:10px; line-height:26px;"><%= link_to 'edit', edit_profile_path if owner(@user) %></div>
+         <div class="clr"></div>
+		</div>       
+       </div>
+       <div class="profileDetails right">
+        <div id="name"><p><%= h @user.name %></p></div>
+        <div id="address"><p>Location: <%= h @user.location %></p></div>
+        <div class="moreDWrap">
+         <div class="moreD left"><p>Expertise</p></div>
+         <div class="edit right"><%= link_to 'edit', edit_profile_path if owner(@user) %></div>
+         <div class="clr"></div>
+        </div>
+        <div class="moreDList"><p><%= h @user.expertise %></p></div>
+        
+        <div class="moreDWrap">
+         <div class="moreD left"><p>Tags</p></div>
+         <div class="edit right"><%= link_to 'edit', edit_profile_path if owner(@user) %></div>
+         <div class="clr"></div>
+        </div>
+        <div class="moreDList"><p><%= h @user.tag_list %></p></div>
+        
+        <div class="moreDWrap">
+         <div class="moreD left"><p>About</p></div>
+         <div class="edit right"><%= link_to 'edit', edit_profile_path if owner(@user) %></div>
+         <div class="clr"></div>
+        </div>
+        <div class="moreDList"><p><%= @user.about %></p></div>
+        
+       </div>
+       <div class="clr">
+       </div>
+      </div> 
+	  
+	 </div>

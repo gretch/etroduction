@@ -1,0 +1,9 @@
+<h1>Manage Users</h1>
+
+<br />
+
+<% @users.each do |user| %>
+  <%= content.title %> <% if current_user and current_user.admin? %> <%= link_to published_tag(content), published_link(content), :method => :post %> | <%= link_to 'Show', member_path(user) %> <% end %><br /><br />
+<% end %>
+
+<%= will_paginate @contents %>

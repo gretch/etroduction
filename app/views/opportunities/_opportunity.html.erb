@@ -1,0 +1,35 @@
+<div class="entryWrap">
+  <div class="h1Wrap">
+    <h1><%= link_to truncate(content.title, :length => 60), content.source %></h1>
+  </div>
+  <div class="entryInfoWrap"> 
+    <div class="entryInfo">
+      <div class="entryInfoDate left">
+        <%= link_to content.created_at.strftime("%B %d, %Y"), '#' %>
+      </div>
+      <div class="entryInfoMid left">
+        Posted by: <%= link_to author_name(content), author_link(content) %> in <%= link_to content.category.title, '#' %>
+      </div>
+      <div class="entryInfoComment right">
+        <%= link_to pluralize(content.comments_count, 'comment'), '#' %>
+      </div>
+      <div class="clr"></div>
+    </div>
+  </div>
+  <div class="entryInfoBottom"></div>
+  <div class="entryContent">
+    <p>
+      <%= truncate(content.body, :length => 500) %>
+    </p>
+  </div>
+  <div class="clr"></div>
+  <div class="entryFooter">
+    <div class="socialMedias left">
+      <%= render :partial => 'shared/share', :locals => {:content => content} %>
+    </div>
+    <div class="readMore right">
+      <%= link_to '', content_path(content.shortname) %>
+    </div>
+    <div class="clr"></div>
+  </div>
+</div>

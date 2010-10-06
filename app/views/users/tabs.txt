@@ -1,0 +1,88 @@
+		<div id="rtab2" class="tab_content">
+			<div class="note"><p>Please take <span>10 seconds</span> to answer the questions below and tell us a little bit about yourself. <br />There is only one more step after, we promise!</p>
+			</div>
+			<div id="loginDetailsForm">
+				<div id="personalDetails" style="padding:20px 0 0 30px;">
+						  <table align="center" width="850px;" style="margin-top:20px;">
+							<tr>
+							  <td width="295px;" class="formLabel2">What do you do?</td>
+							  <td width="40px;">&nbsp;</td>
+							  <td width="140px;" class="formLabel2">For how long?</td>
+							  <td width="40px">&nbsp;</td>
+							  <td width="315px;" class="formLabel2">Tag yourself</td>
+						  </tr>
+							<tr>
+							  <td><input style="background:url(images/pdtf1.jpg) no-repeat left; width:295px; height:20px; border:none; padding:15px 0 5px 5px;" /></td>
+							  <td style="background:url(images/pdarrow.jpg) no-repeat center; width:11px;"></td>
+							  <td><input style="background:url(images/pdtf2.jpg) no-repeat left; width:140px; height:20px; border:none; padding:15px 0 5px 5px;" /></td>
+							  <td style="background:url(images/pdarrow.jpg) no-repeat center; width:11px;">&nbsp;</td>
+							  <td><input style="background:url(images/pdtf3.jpg) no-repeat left; width:315px; height:20px; border:none; padding:15px 0 5px 5px;" /></td>
+						  </tr>
+							<tr>
+							  <td align="right" style="color:#a4a4a4; width:295px; display:inline;"><em>Ex: Marketing, Graphic Design, Lawyer.</em></td>
+							  <td>&nbsp;</td>
+							  <td align="right" style="color:#a4a4a4; width:140px; display:inline;"><em>Ex: 3 yrs.</em></td>
+							  <td>&nbsp;</td>
+							  <td align="right" style="color:#a4a4a4; width:315px; display:inline;"><em>Ex: Asia Pacific. Mobile, Commercial, Javascript</em></td>
+						  </tr>
+
+						</table>
+						  <div style="padding-top:10px; margin:auto; display:block; width:200px; padding-top:50px;"><input type="image" src="images/pdsubmit.jpg" />
+						  </div> 
+						</div>
+					</div>
+		</div>
+		
+		<div id="rtab3" class="tab_content">
+			<div class="note"><p>Please choose a method below from which import and invite contacts from.<br />You can either import contacts from an email service, or from a file.</p>
+			</div>
+        	<div id="inviteFriends">
+            <div id="emailService">
+        	  <table align="center" style="margin:auto; padding-top:15px;">
+        	    <tr>
+        	       <td width="200px;" class="formLabel2" style="padding-bottom:10px;">Select email service</td>
+        	       <td width="60px;">&nbsp;</td>
+        	       <td width="200px;" class="formLabel2" style="padding-bottom:10px;">Upload a file</td>
+      	         </tr>
+        	     <tr>
+        	       <td>
+                    <select style="width:200px;">
+                        <option>-- Select Email Service --</option>
+                        <option>Gmail</option>
+                        <option>Hotmail</option>
+                        <option>MSN Live</option>
+                        <option>Yahoo</option>
+					</select>
+                   </td>
+        	       <td width="60px;" style="text-align:center;"> OR </td>
+        	       <td><input type="file" /></td>
+      	         </tr>
+      	       </table>
+            </div>
+            <div id="Contacts">
+             <div class="chooseContacts left">
+              <h2>Choose Contacts</h2>
+              <div class="contactsFrame">
+              </div>
+             </div>
+             <div class="chooseContacts right">
+              <h2>Selected Contacts</h2>
+              <div class="contactsFrame">
+              </div>
+             </div>
+             <div class="clr">
+             </div>
+            </div>
+            <div style="padding-top:10px; margin:auto; display:block; width:200px; padding-top:50px;"><input type="image" src="images/pdsubmit.jpg" />
+       	    </div> 
+        </div>
+		</div>
+		
+		<div id="rtab4"  class="tab_content">
+			<div id="done" style="padding-top:50px;">
+        	  <div class="formLabel2" style="text-align:center;"><p>Hurray! Thanks for signing up.</p></div>
+              <div class="note" style="text-align:center;"><p>Take me now to my <span class="smallLink"><a href="#">Profile</a></span> and start introducing</p></div>
+            </div>
+        </div>
+		
+	</div>

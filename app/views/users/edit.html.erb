@@ -1,0 +1,13 @@
+	 <div class="midCont left">
+       <div class="profileDetails">
+        <div id="name"><p>Edit Profile</p></div>
+        <% form_for @user, :url => profile_path do |f| %>
+  <%= f.error_messages %>
+  <%= render :partial => "form", :object => f %>
+  <%= f.submit "Update" %>
+<% end %>
+       <div class="clr">
+       </div>
+      </div> 
+	  
+	 </div>

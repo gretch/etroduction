@@ -1,0 +1,48 @@
+	 <div class="midCont left">
+<%= render :partial =>'shared/search_box' %>
+	  
+      <div id="shareOpp">
+       <div><h2>Inbox</h2></div>
+       <div class="formWrapper">
+	    <div id="inboxMenuTop">
+        <div class="left">
+		 <div class="left" style="margin-right:3px;"><input type="image" src="images/message.jpg" /></div>
+		 <div class="inboxMenu left">
+		  <ul>
+		   <li><a href="#">Select All</a> :</li>
+		   <li><a href="#">Mark as Unread</a> :</li>
+		   <li><a href="#">Spam</a> :</li>
+		   <li><a href="#">Delete</a> </li>
+		   <div class="clr"></div>
+		  </ul>
+		 </div>
+		 <div class="right"></div>
+		 <div class="clr"></div>
+		</div>
+		<div class="right">
+		  <div class="arrowLeft left"><a href="#"></a></div>
+		  <div class="arrowRight right"><a href="#"></a></div>
+		  <div class="clr"></div>
+		 <div class="clr"></div>
+		</div>
+		<div class="clr"></div>
+		</div>
+		<div><input type="text" class="siTextField" value="Search Message" /></div>
+		<div id="connList">
+		<!-- start listing-->
+      <%= render :partial => "message", :collection => @messages %>
+		</div>
+		<div id="bNav" style="margin-top:10px;">
+		 <div class="left"></div>
+		 <div class="right">
+		  <div class="arrowLeft left"><a href="#"></a></div>
+		  <div class="arrowRight right"><a href="#"></a></div>
+		  <div class="clr"></div>
+		 </div>
+		 <div class="clr"></div>
+        </div>
+	   </div>
+      </div> 
+	  
+	 </div>
+<%= render :partial => 'shared/sidebar' %>

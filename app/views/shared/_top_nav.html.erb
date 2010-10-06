@@ -1,0 +1,8 @@
+<div class="topMenu">
+     <% if current_user %>
+       Hi <span><%= current_user.name %></span>  : <%= link_to 'Settings', profile_path %>  :  <%= link_to 'Sign out', logout_path %>
+     <% else %>
+       <%= link_to 'Register', register_path %>
+       <%= link_to 'Sign in', login_path %>
+     <% end %>
+     </div>

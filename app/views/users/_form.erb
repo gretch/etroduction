@@ -1,0 +1,33 @@
+<%= form.label :name %><br />
+<%= form.text_field :name %><br />
+<%= form.label :location %><br />
+<%= form.text_field :location %><br />
+<br />
+<%= form.label :expertise %><br />
+<%= form.text_area :expertise, :size => "34x4" %><br />
+<br />
+<%= form.label :login %><br />
+<%= form.text_field :login %><br />
+<br />
+<%= form.label :email %><br />
+<%= form.text_field :email %><br />
+<br />
+<%= form.label :about %><br />
+<%= form.text_area :about, :size => "34x15" %><br />
+<br />
+<%= form.label 'Tags' %><br />
+<%= form.text_field :tag_list %><br />
+<br />
+<%= form.label :linkedin_link %><br />
+<%= form.text_field :linkedin_link %><br />
+<br />
+<%= form.label :facebook_link %><br />
+<%= form.text_field :facebook_link %><br />
+<br />
+<% if form.object.new_record? %>
+<%= form.label :password, form.object.new_record? ? "Password" : "Change password" %><br />
+<%= form.password_field :password %><br />
+<br />
+<%= form.label :password_confirmation %><br />
+<%= form.password_field :password_confirmation %><br />
+<% end %>

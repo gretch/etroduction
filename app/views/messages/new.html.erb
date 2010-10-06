@@ -1,0 +1,39 @@
+	 <div class="midCont left">
+<%= render :partial =>'shared/search_box' %>
+	  
+      <div id="makeEtro">
+       <div><h2>Make an etroduction</h2></div>
+		<div class="tabCont">
+		 <div class="makeTab">
+          <ul class="tabs">
+            <li class="m1"> <a href="#tab1"> </a></li>
+          </ul>
+         </div>
+		  <div class="tab_container"> 
+           <div id="tab1" class="tab_content"> 
+            <div><input type="text" class="siTextField" value="Search Message" /></div>
+		    
+            <div id="fLWrap">			
+			 
+             <div class="cnt1">
+             
+             <div class="cnt1">
+             <%= render :partial => "contact", :collection => @contacts %>
+			 
+			 <div class="clr"></div>
+            </div>
+			</div>
+            <div id="bWrap">
+             <input type="image" src="images/bCont.jpg" />
+            </div>
+           </div> 
+           <!-- end tab1-->
+       
+           </div>
+           </div> 		   
+          </div> 
+		</div>   
+      </div> 
+	  
+	 </div>
+<%= render :partial => 'shared/sidebar' %>

@@ -1,0 +1,12 @@
+<div class="menuLeft left">
+      <ul>
+       <li><%= link_to 'Home', root_path %></li>
+       <% if current_user %>
+       <li><%= link_to 'Make etroduction', make_etroduction_path %></li>
+       <li><%= link_to 'Share Opportunity', share_opportunity_path %></li>
+       <li><%= link_to 'Profile', profile_path %></li>
+       <li><%= link_to 'Connections', connections_path %></li>
+       <li><%= link_to 'Inbox', inbox_path %></li> 
+       <% end %>
+      </ul>
+	 </div>
